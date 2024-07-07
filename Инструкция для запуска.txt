@@ -9,8 +9,10 @@
 
 Инструкция для Linux:
 1) Откройте терминал и перейдите в корневую директорию проекта
-2) Введите команду pip install pyinstaller для установки необходимой библиотеки
-3) Введите команду pip install -r requirements.txt
-4) Введите команду pyinstaller --onefile --name main main.py
-5) Перейдите в папку с файлом, введя команду cd ./dist
-6) Введите команду ./main для запуска программы
+2) Введите virtualenv --python=python3 ~/venv/main для создания виртуального окружения
+3) Введите source ~/venv/main/bin/activate для активации окружения
+4) Введите команду pip install pyinstaller для установки необходимой библиотеки
+5) Введите команду pip install -r requirements.txt
+6) Введите команду pyinstaller --onefile --name main main.py
+7) Перейдите в папку с файлом, введя команду cd ./dist
+8) Введите команду ./main для запуска программы
